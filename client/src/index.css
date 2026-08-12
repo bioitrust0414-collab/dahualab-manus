@@ -218,13 +218,23 @@ h1 em, h2 em, h3 em { color: var(--teal); font-style: normal; }
 .footer-address svg { color: #8ed4cc; }
 .footer-bottom { display: flex; justify-content: space-between; margin-top: 50px; padding-top: 18px; border-top: 1px solid rgba(255,255,255,.15); color: #81979c; font-size: .68rem; }
 .social-fab { position: fixed; z-index: 40; right: clamp(14px, 2.5vw, 30px); bottom: calc(22px + env(safe-area-inset-bottom)); display: flex; flex-direction: column; align-items: flex-end; gap: 9px; pointer-events: none; }
-.social-btn { display: flex; width: 48px; height: 48px; align-items: center; justify-content: flex-start; gap: 9px; overflow: hidden; padding: 0 14px; border: 1px solid rgba(16, 42, 67, .14); border-radius: 999px; background: rgba(255, 253, 250, .94); box-shadow: 0 12px 28px rgba(16, 42, 67, .14); pointer-events: auto; white-space: nowrap; transition: width .2s var(--ease-out), transform .16s var(--ease-out), box-shadow .2s ease, background-color .2s ease; }
+.social-btn { display: flex; width: 48px; height: 48px; align-items: center; justify-content: flex-start; gap: 9px; overflow: hidden; padding: 0 14px; border: 1px solid rgba(16, 42, 67, .14); border-radius: 999px; background: rgba(255, 253, 250, .94); pointer-events: auto; white-space: nowrap; transition: width .2s var(--ease-out), transform .16s var(--ease-out), box-shadow .2s ease, background-color .2s ease; }
+.social-btn.facebook { animation: social-breathe-facebook 3.8s ease-in-out infinite; }
+.social-btn.line { animation: social-breathe-line 3.8s ease-in-out .8s infinite; }
 .social-btn:hover, .social-btn:focus-visible { width: 150px; transform: translateY(-3px); box-shadow: 0 16px 32px rgba(16, 42, 67, .2); }
 .social-glyph { display: inline-flex; width: 20px; min-width: 20px; align-items: center; justify-content: center; font-weight: 900; }
 .social-label { max-width: 0; overflow: hidden; opacity: 0; transform: translateX(7px); font-size: .72rem; font-weight: 900; transition: max-width .2s var(--ease-out), opacity .16s ease, transform .2s var(--ease-out); }
 .social-btn:hover .social-label, .social-btn:focus-visible .social-label { max-width: 110px; opacity: 1; transform: translateX(0); }
 .social-btn.facebook { color: #1877f2; font-family: Arial, sans-serif; font-size: 1.3rem; }
 .social-btn.line { color: #139b57; font-size: .58rem; letter-spacing: .02em; }
+@keyframes social-breathe-facebook {
+  0%, 100% { box-shadow: 0 12px 28px rgba(16, 42, 67, .14), 0 0 0 0 rgba(24, 119, 242, 0); }
+  50% { box-shadow: 0 15px 30px rgba(16, 42, 67, .18), 0 0 0 6px rgba(24, 119, 242, .12); }
+}
+@keyframes social-breathe-line {
+  0%, 100% { box-shadow: 0 12px 28px rgba(16, 42, 67, .14), 0 0 0 0 rgba(19, 155, 87, 0); }
+  50% { box-shadow: 0 15px 30px rgba(16, 42, 67, .18), 0 0 0 6px rgba(19, 155, 87, .12); }
+}
 
 .education-page { padding: 170px 0 130px; background: var(--ivory); }
 .education-page-heading { max-width: 800px; margin-bottom: 66px; }

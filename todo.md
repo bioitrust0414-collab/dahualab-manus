@@ -1,5 +1,8 @@
 # 本次網站更新待辦
 
+- [x] 為 Facebook 與 LINE 浮動按鈕加入微小呼吸燈動畫
+- [x] 驗證動畫不干擾點擊、hover/focus 與減少動態設定
+- [ ] 保存呼吸燈動畫更新後的 Manus checkpoint
 - [x] 優化右下角 Facebook 與 LINE 固定浮動按鈕的視覺與互動狀態
 - [x] 驗證桌面與手機版固定位置、安全間距與無障礙標籤
 - [ ] 保存浮動按鈕更新後的 Manus checkpoint
