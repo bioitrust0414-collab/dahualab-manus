@@ -1,5 +1,11 @@
 # 本次網站更新待辦
 
+- [x] 匯出所有 /manus-storage/ 圖片並放入 repo 本地目錄
+- [x] 將 Home.tsx 圖片路徑改為本地 /images/ 路徑
+- [x] 移除 vite.config.ts 的 storage proxy 與 Manus 專屬依賴
+- [x] 執行 pnpm build 並確認無 Manus runtime／環境變數依賴
+- [ ] 推送完整原始碼至 bioitrust0414-collab/health-web-app-manus main
+- [ ] 回報 commit、branch 與新增圖片清單
 - [x] 為 Facebook 與 LINE 浮動按鈕加入微小呼吸燈動畫
 - [x] 驗證動畫不干擾點擊、hover/focus 與減少動態設定
 - [ ] 保存呼吸燈動畫更新後的 Manus checkpoint

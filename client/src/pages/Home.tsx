@@ -22,14 +22,12 @@ import {
 } from "lucide-react";
 
 const assets = {
-  mark: "/manus-storage/dahua-mark_0995cfa5.png",
-  hero: "/manus-storage/dahua-hero-lab_988c4a13.jpg",
-  interior: "/manus-storage/dahua-clinic-interior_34f2aff3.jpg",
-  specimen: "/manus-storage/dahua-specimen-detail_631410cc.jpg",
-  clinicFront: "/manus-storage/dhlp1_59441b65.webp",
-  clinicStreet: "/manus-storage/dhlp2_a55b5e97.webp",
-  clinicDesk: "/manus-storage/dhlp3_2370cfb6.webp",
-  clinicLab: "/manus-storage/dhlp4_a501f01d.webp",
+  mark: "/images/dahua-mark.png",
+  hero: "/images/dahua-hero-lab.jpg",
+  interior: "/images/dahua-clinic-interior.jpg",
+  specimen: "/images/dahua-specimen-detail.jpg",
+  clinicFront: "/images/dhlp1.webp",
+  clinicLab: "/images/dhlp4.webp",
 };
 
 type Package = {

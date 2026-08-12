@@ -8,5 +8,5 @@
   "background_color": "#F7F4EE",
   "theme_color": "#102A43",
   "lang": "zh-Hant",
-  "icons": [{ "src": "/manus-storage/dahua-mark_0995cfa5.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }]
+  "icons": [{ "src": "/images/dahua-mark.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }]
 }
