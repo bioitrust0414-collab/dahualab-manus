@@ -191,7 +191,7 @@ function Footer() {
 }
 
 function SocialLinks() {
-  return <div className="social-fab" aria-label="社群連結"><a href="https://www.facebook.com/dahualabpeng" target="_blank" rel="noreferrer" className="social-btn facebook" aria-label="Facebook 官方頁">f</a><a href="https://line.me/ti/p/@932cczax" target="_blank" rel="noreferrer" className="social-btn line" aria-label="LINE 官方帳號">LINE</a></div>;
+  return <div className="social-fab" aria-label="社群連結"><a href="https://www.facebook.com/dahualabpeng" target="_blank" rel="noreferrer" className="social-btn facebook" aria-label="開啟 Facebook 官方頁"><span className="social-glyph" aria-hidden="true">f</span><span className="social-label">Facebook 官方頁</span></a><a href="https://line.me/ti/p/@932cczax" target="_blank" rel="noreferrer" className="social-btn line" aria-label="加入 LINE 官方帳號"><span className="social-glyph" aria-hidden="true">LINE</span><span className="social-label">加入 LINE 諮詢</span></a></div>;
 }
 
 export default function Home() {
