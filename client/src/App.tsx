@@ -2,21 +2,28 @@
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/NotFound";
+import { useEffect } from "react";
 import { Route, Switch } from "wouter";
 import ErrorBoundary from "./components/ErrorBoundary";
 import { ThemeProvider } from "./contexts/ThemeContext";
-import Home, { ArticlePage } from "./pages/Home";
+import Home from "./pages/Home";
 
 function Router() {
   return (
     <Switch>
       <Route path="/" component={Home} />
-      <Route path="/health-education" component={Home} />
-      <Route path="/health-education/:slug" component={ArticlePage} />
+      <Route path="/health-education" component={RemovedEducationRedirect} />
       <Route path="/404" component={NotFound} />
       <Route component={NotFound} />
     </Switch>
   );
+}
+
+function RemovedEducationRedirect() {
+  useEffect(() => {
+    window.location.replace("/");
+  }, []);
+  return null;
 }
 
 export default function App() {

@@ -4,7 +4,6 @@ import { Link, useLocation } from "wouter";
 import {
   Activity,
   ArrowRight,
-  BookOpen,
   Check,
   ChevronDown,
   CircleArrowRight,
@@ -27,12 +26,10 @@ const assets = {
   hero: "/manus-storage/dahua-hero-lab_988c4a13.jpg",
   interior: "/manus-storage/dahua-clinic-interior_34f2aff3.jpg",
   specimen: "/manus-storage/dahua-specimen-detail_631410cc.jpg",
-  education: "/manus-storage/dahua-health-education_c9a22efd.jpg",
   clinicFront: "/manus-storage/dhlp1_59441b65.webp",
   clinicStreet: "/manus-storage/dhlp2_a55b5e97.webp",
   clinicDesk: "/manus-storage/dhlp3_2370cfb6.webp",
   clinicLab: "/manus-storage/dhlp4_a501f01d.webp",
-  articleCover: "/manus-storage/card1_cover_7379907f.jpg",
 };
 
 type Package = {
@@ -67,15 +64,6 @@ const geneTests = [
   ["體重管理基因", "了解代謝與體重管理線索"],
   ["逆齡美妍基因", "觀察肌膚與修護相關因子"],
   ["喚時淨白基因", "整理環境與肌膚相關指標"],
-];
-
-const articles = [
-  { slug: "mineral-iron-calcium", category: "礦物質科普", title: "鐵與鈣：從日常檢驗讀懂身體線索", summary: "用容易理解的方式認識鐵與鈣在身體中的角色，以及檢驗數字可以如何協助日常判讀。", tags: ["鐵質", "鈣質", "血液檢驗"], cover: assets.specimen, body: ["鐵與鈣都是日常健康討論中常出現的礦物質，但真正有意義的理解，應該回到飲食、生活狀況與檢驗指標一起看。", "衛教內容可以協助你建立問題清單，實際檢驗結果仍應交由醫事人員依個人情況說明。", "如果你不確定該從哪一項開始，可以先透過預約諮詢，把想了解的狀況告訴我們。"] },
-  { slug: "active-calcium", category: "營養補充", title: "鈣質與日常生活：先理解，再選擇", summary: "整理鈣質、骨骼與日常飲食的基礎觀念，避免只看單一產品或單一數字。", tags: ["鈣質", "骨骼", "生活"], cover: assets.education, body: ["鈣質的討論不只關於補充，也包括日常飲食、活動量與整體健康狀態。", "若有特殊生理狀況、用藥或長期不適，應先向合適的醫療專業人員詢問，再決定下一步。"] },
-  { slug: "pet-health", category: "寵物保健", title: "毛孩的關節與日常營養觀察", summary: "從生活習慣與活動狀態出發，建立毛孩健康觀察筆記。", tags: ["寵物", "關節", "觀察"], cover: assets.interior, body: ["寵物的活動量、步態與食慾變化，都可以成為日常照護時值得記錄的線索。", "本篇提供一般觀察方向，不取代獸醫診斷；若出現明顯異常，請儘早尋求獸醫協助。"] },
-  { slug: "iron-deficiency", category: "血液檢驗", title: "缺鐵性貧血：檢驗指標與飲食問題清單", summary: "認識 Ferritin 等常見名詞，帶著更好的問題與專業人員討論。", tags: ["貧血", "Ferritin", "血液檢查"], cover: assets.clinicLab, body: ["疲倦或注意力下降可能有很多原因，不能只靠單一症狀判斷是否缺鐵。", "Ferritin 等指標需要搭配完整檢驗與個人狀況判讀；如果你有疑問，可以在諮詢時把症狀、飲食與過往檢查一起提出。"] },
-  { slug: "vitamin-d", category: "營養補充", title: "維生素 D：從檢測結果開始理解", summary: "了解 25-OH-D 常見名詞與檢測結果在健康管理中的位置。", tags: ["維生素 D", "檢測", "日常"], cover: assets.clinicFront, body: ["維生素 D 常被放在免疫、骨骼與生活型態的討論中，但解讀仍要回到檢測方法與個人狀況。", "任何補充決策都不應只依據網路文章；若有長期用藥或特殊狀況，請先詢問醫療專業人員。"] },
-  { slug: "sleep-quality", category: "睡眠與神經", title: "睡眠品質：先留下可觀察的線索", summary: "用睡眠時間、夜間醒來與生活節奏建立自己的觀察記錄。", tags: ["睡眠", "神經", "生活"], cover: assets.clinicDesk, body: ["睡眠品質會受到生活節奏、壓力、環境與身體狀態共同影響。", "與其只追求單一營養素，不如先記錄一至兩週的睡眠狀況，再帶著具體資訊與專業人員討論。"] },
 ];
 
 function SectionLabel({ index, eyebrow, title, intro }: { index: string; eyebrow: string; title: string; intro: string }) {
@@ -115,7 +103,6 @@ function SiteNav() {
         <nav id="main-navigation" className={`main-navigation${open ? " is-open" : ""}`}>
           <a href={anchor("services")} onClick={close}>服務內容</a>
           <a href={anchor("packages")} onClick={close}>檢驗方案</a>
-          <Link href="/health-education" onClick={close}>衛教知識</Link>
           <a className="nav-cta" href={anchor("booking")} onClick={close}>預約諮詢 <ArrowRight size={15} /></a>
         </nav>
       </div>
@@ -189,10 +176,6 @@ function GeneSection() {
   return <section className="gene-section"><div className="content-shell gene-grid"><div className="gene-image"><img src={assets.clinicLab} alt="明亮的醫事檢驗所工作空間" /><span className="image-caption">03 / GENETIC INSIGHT</span></div><div className="gene-copy"><p className="eyebrow">GENETIC TESTING</p><h2>把先天線索，放回完整的生活脈絡。</h2><p>基因檢測提供的是一組參考線索，不是命運的答案。了解檢測目的、適用範圍與結果限制，再決定是否需要進一步諮詢。</p><div className="gene-list">{geneTests.map(([name, desc], index) => <div className="gene-item" key={name}><span>0{index + 1}</span><div><strong>{name}</strong><small>{desc}</small></div><ArrowRight size={15} /></div>)}</div><a href="#booking" className="button button-primary">詢問基因檢測 <ArrowRight size={16} /></a></div></div></section>;
 }
 
-function EducationSection() {
-  return <section className="education-section" id="education"><div className="content-shell"><SectionLabel index="04" eyebrow="HEALTH EDUCATION" title="先讀懂，再做選擇" intro="把常見健康名詞寫得清楚一點，讓你在下一次和專業人員對話時，有更好的問題。" /><div className="education-feature"><div className="education-image"><img src={assets.education} alt="衛教筆記與生活觀察物件" /></div><div className="education-feature-copy"><span className="article-kicker">FEATURED NOTE / {articles[0].category}</span><h3>{articles[0].title}</h3><p>{articles[0].summary}</p><Link href={`/health-education/${articles[0].slug}`} className="text-link">閱讀完整內容 <ArrowRight size={16} /></Link></div></div><div className="article-grid">{articles.slice(1, 4).map((article) => <Link href={`/health-education/${article.slug}`} className="article-card" key={article.slug}><div className="article-card-top"><span>{article.category}</span><ArrowRight size={16} /></div><h3>{article.title}</h3><p>{article.summary}</p><div className="article-tags">{article.tags.map((tag) => <span key={tag}>{tag}</span>)}</div></Link>)}</div><div className="education-footer"><Link href="/health-education" className="button button-outline">瀏覽全部衛教 <ArrowRight size={16} /></Link><span>共 {articles.length} 篇可閱讀內容</span></div></div></section>;
-}
-
 function Booking() {
   const [form, setForm] = useState({ name: "", phone: "", package: "", note: "" });
   const [stage, setStage] = useState<"idle" | "ready" | "fallback">("idle");
@@ -204,23 +187,13 @@ function Booking() {
 }
 
 function Footer() {
-  return <footer className="site-footer"><div className="content-shell footer-grid"><div><Brand compact /><p className="footer-note">把檢驗結果，交給能好好解釋的人。</p></div><div className="footer-links"><span>DAHUA MEDICAL LABORATORY</span><a href="tel:047616801">04-7616801</a><a href="https://line.me/ti/p/@932cczax" target="_blank" rel="noreferrer">LINE 官方帳號</a></div><div className="footer-address"><MapPin size={15} />彰化市崙平南路 532 號</div></div><div className="content-shell footer-bottom"><span>© 2026 大華醫事檢驗所</span><span>一般健康資訊，不取代個別醫療建議。</span></div></footer>;
+  return <footer className="site-footer"><div className="content-shell footer-grid"><div><Brand compact /><p className="footer-note">把檢驗結果，交給能好好解釋的人。</p></div><div className="footer-links"><span>DAHUA MEDICAL LABORATORY</span><a href="tel:047616801">04-7616801</a><a href="https://line.me/ti/p/@932cczax" target="_blank" rel="noreferrer">LINE 官方帳號</a><a href="https://www.facebook.com/dahualabpeng" target="_blank" rel="noreferrer">Facebook 官方頁</a></div><div className="footer-address"><MapPin size={15} />彰化市崙平南路 532 號</div></div><div className="content-shell footer-bottom"><span>© 2026 大華醫事檢驗所</span><span>一般健康資訊，不取代個別醫療建議。</span></div></footer>;
+}
+
+function SocialLinks() {
+  return <div className="social-fab" aria-label="社群連結"><a href="https://www.facebook.com/dahualabpeng" target="_blank" rel="noreferrer" className="social-btn facebook" aria-label="Facebook 官方頁">f</a><a href="https://line.me/ti/p/@932cczax" target="_blank" rel="noreferrer" className="social-btn line" aria-label="LINE 官方帳號">LINE</a></div>;
 }
 
 export default function Home() {
-  const [path] = useLocation();
-  const isEducation = path === "/health-education";
-  return <div className="site"><SiteNav />{isEducation ? <main className="education-page"><div className="content-shell education-page-heading"><p className="eyebrow">HEALTH EDUCATION / FIELD NOTES</p><h1>把健康資訊，<em>寫得清楚一點。</em></h1><p>這裡整理檢驗、營養與日常觀察的基礎知識。文章提供一般資訊，實際狀況請與合適的專業人員討論。</p></div><div className="content-shell archive-feature"><div className="archive-feature-image"><img src={articles[0].cover} alt="" /><span>01 / FEATURED NOTE</span></div><div className="archive-feature-copy"><p className="eyebrow">{articles[0].category}</p><h2>{articles[0].title}</h2><p>{articles[0].summary}</p><Link href={`/health-education/${articles[0].slug}`} className="text-link">閱讀完整內容 <ArrowRight size={16} /></Link></div></div><div className="content-shell archive-list"><div className="archive-list-head"><span>02—06 / FIELD NOTES</span><span>CURATED HEALTH EDUCATION</span></div>{articles.slice(1).map((article, index) => <Link href={`/health-education/${article.slug}`} className="archive-row" key={article.slug}><span className="archive-row-index">0{index + 2}</span><div className="archive-row-image"><img src={article.cover} alt="" /></div><div className="archive-row-copy"><span>{article.category}</span><h2>{article.title}</h2><p>{article.summary}</p><div className="article-tags">{article.tags.map((tag) => <small key={tag}>{tag}</small>)}</div></div><ArrowRight className="archive-row-arrow" size={18} /></Link>)}</div></main> : <main><Hero /><Services /><Packages /><GeneSection /><EducationSection /><Booking /></main>}<Footer /></div>;
-}
-
-export function ArticlePage() {
-  const [path] = useLocation();
-  const slug = path.split("/").pop();
-  const article = articles.find((item) => item.slug === slug);
-  if (!article) return <NotFoundArticle />;
-  return <div className="site"><SiteNav /><main className="article-page"><div className="content-shell article-layout"><div className="article-main"><Link href="/health-education" className="back-link">← 回到衛教知識</Link><p className="eyebrow">{article.category} / HEALTH NOTE</p><h1>{article.title}</h1><p className="article-lede">{article.summary}</p><div className="article-meta"><span>{article.tags.join(" · ")}</span><span>一般健康資訊</span></div><img className="article-hero" src={article.cover} alt="" />{article.body.map((paragraph) => <p className="article-paragraph" key={paragraph}>{paragraph}</p>)}<div className="article-callout"><BookOpen size={18} /><div><strong>想把內容放回自己的狀況理解？</strong><span>可以帶著你的問題，從預約諮詢開始。</span></div><a href="/#booking"><ArrowRight size={16} /></a></div></div><aside className="article-aside"><span className="aside-label">RELATED PATH</span><strong>從一個問題開始</strong><p>文章只能提供共同語言，實際的檢驗與健康選擇，留給專業對話。</p><a href="/#booking" className="text-link">預約諮詢 <ArrowRight size={15} /></a></aside></div></main><Footer /></div>;
-}
-
-function NotFoundArticle() {
-  return <div className="site"><SiteNav /><main className="not-found-page"><p className="eyebrow">404 / NOT FOUND</p><h1>這篇內容還在整理中。</h1><p>先回到衛教知識列表，看看目前可以閱讀的內容。</p><Link href="/health-education" className="button button-primary">回到衛教列表 <ArrowRight size={15} /></Link></main><Footer /></div>;
+  return <div className="site"><SiteNav /><main><Hero /><Services /><Packages /><GeneSection /><Booking /></main><Footer /><SocialLinks /></div>;
 }
