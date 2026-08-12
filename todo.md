@@ -1,5 +1,8 @@
 # 本次網站更新待辦
 
+- [x] 在專案根目錄建立 vercel.json
+- [x] 驗證 vercel.json JSON 格式與 pnpm build
+- [ ] 推送 vercel.json 到 GitHub main branch
 - [x] 匯出所有 /manus-storage/ 圖片並放入 repo 本地目錄
 - [x] 將 Home.tsx 圖片路徑改為本地 /images/ 路徑
 - [x] 移除 vite.config.ts 的 storage proxy 與 Manus 專屬依賴
