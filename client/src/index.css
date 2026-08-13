@@ -186,6 +186,12 @@ h1 em, h2 em, h3 em { color: var(--teal); font-style: normal; }
 .contact-lines svg { margin-top: 5px; color: var(--teal); }
 .contact-lines span { display: block; font-size: .9rem; font-weight: 800; }
 .contact-lines small { display: block; margin-bottom: 1px; color: var(--muted); font-size: .62rem; font-weight: 800; letter-spacing: .12em; }
+.parking-highlight { display: flex; align-items: center; gap: 16px; margin-top: 6px; padding: 14px; border-radius: 14px; background: var(--surface, #f6f5f1); }
+.parking-highlight img { width: 96px; height: 72px; object-fit: cover; border-radius: 10px; flex-shrink: 0; }
+.parking-copy { display: flex; align-items: flex-start; gap: 10px; }
+.parking-copy svg { margin-top: 3px; color: var(--teal); flex-shrink: 0; }
+.parking-copy strong { display: block; font-size: .9rem; font-weight: 800; color: var(--ink-soft); }
+.parking-copy small { display: block; margin-top: 3px; color: var(--muted); font-size: .78rem; font-weight: 500; letter-spacing: normal; line-height: 1.5; }
 .booking-card { min-height: 500px; padding: 36px; border: 1px solid var(--line); background: var(--paper); box-shadow: 16px 16px 0 rgba(28, 140, 132, .08); }
 .form-header { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; margin-bottom: 27px; padding-bottom: 17px; border-bottom: 1px solid var(--line); }
 .form-header small { color: var(--muted); font-size: .7rem; }
