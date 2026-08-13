@@ -203,7 +203,7 @@ function Booking() {
 }
 
 function Footer() {
-  return <footer className="site-footer"><div className="content-shell footer-grid"><div><Brand compact /><p className="footer-note">健康的身體是飛往夢想的雙翼。</p></div><div className="footer-links"><span>DAHUA MEDICAL LABORATORY</span><a href="tel:047616801">04-7616801</a><a href="https://line.me/ti/p/@932cczax" target="_blank" rel="noreferrer">LINE 官方帳號</a><a href="https://www.facebook.com/dahualabpeng" target="_blank" rel="noreferrer">Facebook 官方頁</a></div><div className="footer-address"><MapPin size={15} />彰化市崙平南路 532 號</div></div><div className="content-shell footer-bottom"><span>© 2026 大華醫事檢驗所</span><span>一般健康資訊，不取代個別醫療建議。</span></div></footer>;
+  return <footer className="site-footer"><div className="content-shell footer-grid"><div><Brand compact /><p className="footer-note">健康的身體是飛往夢想的雙翼，從此刻開始關心自己的健康。</p></div><div className="footer-links"><span>DAHUA MEDICAL LABORATORY</span><a href="tel:047616801">04-7616801</a><a href="https://line.me/ti/p/@932cczax" target="_blank" rel="noreferrer">LINE 官方帳號</a><a href="https://www.facebook.com/dahualabpeng" target="_blank" rel="noreferrer">Facebook 官方頁</a></div><div className="footer-address"><MapPin size={15} />彰化市崙平南路 532 號</div></div><div className="content-shell footer-bottom"><span>© 2026 大華醫事檢驗所</span><span>一般健康資訊，不取代個別醫療建議。</span></div></footer>;
 }
 
 function SocialLinks() {
