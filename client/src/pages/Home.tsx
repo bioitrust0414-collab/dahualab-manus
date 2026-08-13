@@ -122,7 +122,7 @@ function Hero() {
         <div className="hero-copy">
           <div className="eyebrow hero-eyebrow"><span className="pulse-dot" /> CHANGHUA · EVIDENCE-LED CARE</div>
           <h1>先理解身體，<em>再決定下一步。</em></h1>
-          <p className="hero-lede">大華醫事檢驗所用清楚的檢驗資訊、專業的說明與可以被理解的健康內容，陪你把每一次檢查變成更有方向的照護。</p>
+          <p className="hero-lede">大華醫事檢驗所用清楚的檢驗資訊、專業的儀器與可以被理解的健康內容，陪你把每一次檢查變成更有方向的照護。</p>
           <div className="hero-actions">
             <a className="button button-primary" href="#packages">探索檢驗方案 <ArrowRight size={16} /></a>
             <a className="button button-quiet" href="#booking">預約諮詢 <CircleArrowRight size={16} /></a>
@@ -133,7 +133,7 @@ function Hero() {
         </div>
         <div className="hero-visual">
           <div className="hero-image-wrap"><img src={assets.hero} alt="現代醫事檢驗所中的精密檢測設備" /></div>
-          <div className="hero-note"><span>01 / PRECISION</span><strong>每一個數字，都值得好好解釋。</strong><small>從檢驗選擇到結果理解，讓專業回到人的身上。</small></div>
+          <div className="hero-note"><span>01 / PRECISION</span><strong>每一個數字，都值得好好重視。</strong><small>從檢驗選擇到結果理解，讓專業回到人的身上。</small></div>
           <div className="hero-stamp"><Microscope size={18} /><span>LAB<br />QUALITY</span></div>
         </div>
       </div>
