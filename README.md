@@ -127,3 +127,18 @@ Production build 可能會顯示 JavaScript bundle 超過 500 kB 的非阻斷性
 ## License
 
 本專案目前未設定公開授權條款。若要開放第三方使用，請在此補上正式 License 與品牌資產使用規則。
+
+## Vercel 部署資訊
+
+以下資訊依 2026-08-19 提供的 Vercel Projects 截圖整理：
+
+| 項目 | 資訊 |
+|---|---|
+| Vercel Project | `dahualab-manus` |
+| GitHub Repository | [`bioitrust0414-collab/dahualab-manus`](https://github.com/bioitrust0414-collab/dahualab-manus) |
+| Production domain | [health-web-app-manus.vercel.app](https://health-web-app-manus.vercel.app) |
+| 用途 | 大華醫事檢驗所品牌形象網站版本 |
+
+本專案可獨立部署，不依賴 Manus 專屬 runtime、Forge API 或後端服務。Vercel 部署時請依本 README 原有的 Vite 設定、`pnpm install --frozen-lockfile`、`pnpm build` 與 `dist/public` 輸出目錄執行，並確認 SPA fallback rewrite 正常。
+
+> 網域與 project mapping 依使用者提供的 Vercel Projects 截圖記錄；若 Vercel 後台後續改名或更換 domain，應同步更新本節。
