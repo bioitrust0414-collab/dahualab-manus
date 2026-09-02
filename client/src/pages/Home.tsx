@@ -43,7 +43,7 @@ type Package = {
 
 const packages: Package[] = [
   { code: "DH1", name: "新生活健康檢查", category: "一般健檢", description: "適合首次健檢或年度例行篩檢，從血液、尿液到肝腎功能建立基礎健康輪廓（各套組加做心電圖檢查）。", items: ["血液常規檢查(15項)", "尿液常規檢查(16項)", "肝功能檢查(6項)(GOT、GPT、TP、ALB、GLO、A/G)", "膽道功能檢查(T-Bil、D-Bil、Alk-P)", "酒精性及藥物性肝炎檢查(r-GT)", "腎功能檢查(BUN、Cre)", "痛風檢查(UA)", "膽固醇檢查(CHO)", "中性脂肪檢查(TG)", "糖尿病檢查(AC sugar)", "胰臟功能檢查(a-amylase)", "心肌酵素檢查(CPK)"], icon: "01" },
-  { code: "DH2", name: "幸福型健康檢查", category: "一般健檢", description: "在基礎檢查上補充心血管硬化指數、肝癌篩檢與糖化血色素。", items: ["包含 DH1 全部項目", "血管硬化指數", "肝癌篩檢 AFP", "糖化血色素 HbA1c"], icon: "02" },
+  { code: "DH2", name: "幸福型健康檢查", category: "一般健檢", description: "在基礎檢查上補充心血管硬化指數、肝癌篩檢與糖化血色素。", items: ["血液常規檢查(15項)", "尿液常規檢查(16項)", "肝功能檢查(6項)(GOT、GPT、TP、ALB、GLO、A/G)", "膽道功能檢查(T-Bil、D-Bil、Alk-P)", "酒精性及藥物性肝炎檢查(r-GT)", "腎功能檢查(BUN、Cre)", "痛風檢查(UA)", "膽固醇檢查(CHO)", "中性脂肪檢查(TG)", "糖尿病檢查(AC sugar)", "胰臟功能檢查(a-amylase)", "心肌酵素檢查(CPK)", "高密度(好)膽固醇檢查(HDL-C)", "低密度(壞)膽固醇檢查(LDL-C)", "血管硬化指數分析(T-CHO/HDL)", "動脈硬化指數分析(LDL/HDL)", "肝癌篩檢(AFP)*可更換其他癌症檢測", "糖化血色素(HbA1c)"], icon: "02" },
   { code: "DH3", name: "精緻型健康檢查", category: "一般健檢", description: "進一步觀察肝炎、甲狀腺、類風濕與發炎相關指標。", items: ["包含 DH2 全部項目", "B 型、C 型肝炎", "甲狀腺功能", "類風濕與 hsCRP"], icon: "03" },
   { code: "DH5", name: "尊榮型健康檢查", category: "一般健檢", description: "更完整的全方位方案，適合希望一次整理多項健康線索的你。", items: ["包含 DH3 全部項目", "胃幽門桿菌", "過敏體質與荷爾蒙", "腫瘤標記篩檢"], icon: "04" },
   { code: "DHA", name: "菁英型健康檢查", category: "一般健檢", description: "聚焦心血管與代謝狀態，加入胰島素阻抗、骨質與營養相關指標。", items: ["心血管風險指標", "胰島素阻抗", "維生素 D、Ferritin", "發炎與自體免疫指標"], icon: "05" },
