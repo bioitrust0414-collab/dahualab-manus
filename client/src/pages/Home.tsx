@@ -50,11 +50,12 @@ const packages: Package[] = [
   { code: "DHA", name: "菁英型健康檢查", category: "一般健檢", description: "聚焦心血管與代謝狀態，加入胰島素阻抗、骨質與營養相關指標。", items: ["心血管風險指標", "胰島素阻抗", "維生素 D、Ferritin", "發炎與自體免疫指標"], icon: "05" },
   { code: "DH12", name: "抗衰老健康檢查", category: "一般健檢", description: "以基礎健檢為底，延伸觀察荷爾蒙與身體老化相關指標。", items: ["血液常規檢查(15項)", "尿液常規檢查(16項)", "肝功能檢查(6項)(GOT、GPT、TP、ALB、GLO、A/G)", "膽道功能檢查(T-Bil、D-Bil、Alk-P)", "酒精性及藥物性肝炎檢查(r-GT)", "腎功能檢查(BUN、Cre)", "痛風檢查(UA)", "膽固醇檢查(CHO)", "中性脂肪檢查(TG)", "糖尿病檢查(AC sugar)", "胰臟功能檢查(a-amylase)", "心肌酵素檢查(CPK)", "高密度(好)膽固醇檢查(HDL-C)", "低密度(壞)膽固醇檢查(LDL-C)", "血管硬化指數分析(T-CHO/HDL)", "動脈硬化指數分析(LDL/HDL)", "肝癌篩檢(AFP)*可更換其他癌症檢測", "糖化血色素(HbA1c)", "荷爾蒙檢查(雄性激素 Testosterone、雌性激素 E2)", "抗老(壓力)荷爾蒙檢查(DHEA-S)", "甲狀腺功能分析(TSH)", "性賀爾蒙結合球蛋白(SHBG)"], icon: "06" },
   { code: "DH13", name: "心血管疾病健康檢查", category: "一般健檢", description: "血糖、血脂、發炎與心血管風險評估。", items: ["總膽固醇", "三酸甘油脂", "HDL-C", "LDL-C", "hs-CRP", "ApoA1", "ApoB", "Lipoprotein(a)"], icon: "07", price: "NT$2,100" },
-  { code: "DH6", name: "婚前甜蜜健康檢查", category: "專項檢驗", description: "為準新人整理血液、傳染病、血型與個別需求的檢查組合。", items: ["地中海型貧血評估", "血液常規檢查(15項)", "尿液常規檢查(16項)", "肝膽功能檢查(9項)(GOT、GPT、TP、ALB、GLO、A/G、Alk-P、T-Bil、D-Bil)", "酒精性及藥物性肝炎檢查(r-GT)", "腎功能檢查(BUN、Cre)", "痛風檢查(UA)", "膽固醇檢查(CHO)", "中性脂肪檢查(TG)", "糖尿病檢查(AC sugar)", "胰臟功能檢查(a-amylase)", "心肌酵素檢查(CPK)", "B型肝炎表面抗原(HBsAg)", "C型肝炎檢查(Anti-HCV)", "梅毒血清學檢查(VDRL)", "愛滋病毒篩檢(HIV Ab)", "甲狀腺功能分析(T4)", "血型檢查(ABO、RH type)", "蠶豆症篩檢(G-6-PD)", "精液品質分析(Semen)（男性專屬）", "德國麻疹抗體檢查(Rubella IgG)（女性專屬）"], icon: "08" },
-  { code: "DH7", name: "防癌健康檢查", category: "專項檢驗", description: "依不同需求整理腫瘤標記與相關篩檢項目，先從諮詢開始。", items: ["男性專屬項目", "女性專屬項目", "腫瘤標記組合", "由專業人員說明適用性"], icon: "09" },
-  { code: "DH8", name: "肝臟組合檢查", category: "專項檢驗", description: "針對肝炎病毒、肝功能與肝癌標記做較完整的整理。", items: ["肝膽功能", "B 型、C 型肝炎", "肝癌篩檢 AFP", "A 型肝炎抗體"], icon: "10" },
-  { code: "DH9", name: "性病組合檢查", category: "專項檢驗", description: "提供私密且有條理的性傳染病篩檢諮詢與檢驗選擇。", items: ["梅毒與 HIV", "疱疹、披衣菌", "淋病相關檢查", "尿液常規"], icon: "11" },
-  { code: "DH10", name: "好孕連連組合檢查", category: "專項檢驗", description: "備孕前的男女生育力與相關指標整理，從需求討論開始。", items: ["男性精液與睪固酮", "女性 FSH、LH", "泌乳激素與甲狀腺", "抗穆勒氏管荷爾蒙"], icon: "12" },
+  { code: "DH14", name: "胰島素阻抗套組", category: "一般健檢", description: "評估血糖控制、胰島素阻抗及血脂狀況。", items: ["空腹血糖（AC）", "糖化血色素（HbA1c）", "胰島素（Insulin）", "胰島素阻抗HOMA-IR"], icon: "08", price: "NT$800" },
+  { code: "DH6", name: "婚前甜蜜健康檢查", category: "專項檢驗", description: "為準新人整理血液、傳染病、血型與個別需求的檢查組合。", items: ["地中海型貧血評估", "血液常規檢查(15項)", "尿液常規檢查(16項)", "肝膽功能檢查(9項)(GOT、GPT、TP、ALB、GLO、A/G、Alk-P、T-Bil、D-Bil)", "酒精性及藥物性肝炎檢查(r-GT)", "腎功能檢查(BUN、Cre)", "痛風檢查(UA)", "膽固醇檢查(CHO)", "中性脂肪檢查(TG)", "糖尿病檢查(AC sugar)", "胰臟功能檢查(a-amylase)", "心肌酵素檢查(CPK)", "B型肝炎表面抗原(HBsAg)", "C型肝炎檢查(Anti-HCV)", "梅毒血清學檢查(VDRL)", "愛滋病毒篩檢(HIV Ab)", "甲狀腺功能分析(T4)", "血型檢查(ABO、RH type)", "蠶豆症篩檢(G-6-PD)", "精液品質分析(Semen)（男性專屬）", "德國麻疹抗體檢查(Rubella IgG)（女性專屬）"], icon: "09" },
+  { code: "DH7", name: "防癌健康檢查", category: "專項檢驗", description: "依不同需求整理腫瘤標記與相關篩檢項目，先從諮詢開始。", items: ["男性專屬項目", "女性專屬項目", "腫瘤標記組合", "由專業人員說明適用性"], icon: "10" },
+  { code: "DH8", name: "肝臟組合檢查", category: "專項檢驗", description: "針對肝炎病毒、肝功能與肝癌標記做較完整的整理。", items: ["肝膽功能", "B 型、C 型肝炎", "肝癌篩檢 AFP", "A 型肝炎抗體"], icon: "11" },
+  { code: "DH9", name: "性病組合檢查", category: "專項檢驗", description: "提供私密且有條理的性傳染病篩檢諮詢與檢驗選擇。", items: ["梅毒與 HIV", "疱疹、披衣菌", "淋病相關檢查", "尿液常規"], icon: "12" },
+  { code: "DH10", name: "好孕連連組合檢查", category: "專項檢驗", description: "備孕前的男女生育力與相關指標整理，從需求討論開始。", items: ["男性精液與睪固酮", "女性 FSH、LH", "泌乳激素與甲狀腺", "抗穆勒氏管荷爾蒙"], icon: "13" },
 ];
 
 const geneTests = [
