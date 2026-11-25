@@ -136,6 +136,9 @@ h1 em, h2 em, h3 em { color: var(--teal); font-style: normal; }
 .package-card.is-expanded .package-details { max-height: 1000px; padding: 18px 0 25px; opacity: 1; }
 .package-details span { display: flex; align-items: center; gap: 8px; color: var(--ink-soft); font-size: .83rem; }
 .package-details span svg { color: var(--teal); flex: none; }
+.package-price { grid-column: 1 / -1; display: flex; align-items: baseline; gap: 10px; margin-top: 6px; padding-top: 14px; border-top: 1px solid var(--line); }
+.package-price small { color: var(--muted); font-size: .75rem; font-weight: 700; letter-spacing: .08em; }
+.package-price strong { color: var(--ink); font-family: "Noto Serif TC", serif; font-size: 1.25rem; font-weight: 700; }
 .package-details a { grid-column: 1 / -1; display: inline-flex; align-items: center; gap: 8px; margin-top: 8px; color: var(--teal-deep); font-size: .78rem; font-weight: 900; }
 .package-disclaimer { display: flex; align-items: flex-start; gap: 12px; max-width: 680px; margin-top: 28px; color: var(--muted); font-size: .78rem; }
 .package-disclaimer svg { flex: none; margin-top: 4px; color: var(--teal); }
